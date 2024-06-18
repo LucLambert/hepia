@@ -1,3 +1,3 @@
 # Hepia
 
-A part of my works during formation at hepia
+Part of my work during my studies at HES-SO HEPIA
