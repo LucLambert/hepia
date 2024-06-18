@@ -1,0 +1,64 @@
+$version
+   VCD tracing
+	Hepia 2013-2014
+$end
+
+$timescale
+   1 ms
+$end
+
+$comment
+$end
+
+$scope module Collected traces $end
+$var wire	 1  sig_000 sig_000 $end
+$var wire	 1  sig_001 sig_001 $end
+$upscope $end
+$enddefinitions  $end
+
+$dumpvars
+1sig_000
+0sig_001
+$end
+
+
+#30
+0sig_000
+#30
+1sig_001
+#60
+1sig_000
+#60
+0sig_001
+#90
+0sig_000
+#90
+1sig_001
+#120
+1sig_000
+#120
+0sig_001
+#150
+0sig_000
+#150
+1sig_001
+#180
+1sig_000
+#180
+0sig_001
+#210
+0sig_000
+#210
+1sig_001
+#240
+1sig_000
+#240
+0sig_001
+#270
+0sig_000
+#270
+1sig_001
+#300
+1sig_000
+#300
+0sig_001

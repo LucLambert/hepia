@@ -1,0 +1,24 @@
+$version
+   VCD tracing
+	Hepia
+$end
+
+$timescale
+   1 ms
+$end
+
+$comment
+$end
+
+$scope module Collected traces $end
+$var wire	 1  sig_000 sig_000 $end
+$var wire	 1  sig_001 sig_001 $end
+$upscope $end
+$enddefinitions  $end
+
+$dumpvars
+1sig_000
+0sig_001
+$end
+
+

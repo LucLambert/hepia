@@ -1,0 +1,23 @@
+Programmation concurrente
+TP 1
+Groupe Montambert
+Luc Lambert - Philippe Montandon
+
+
+Introduction
+
+L’objectif de ce travail pratique était de réussir à implémenter une version multi-thread d’un programme en partant d’un code de base mono-thread fourni par notre cher professeur, M. Pilloux.
+Le programme fourni nous fait parcourir un tableau 2D case par case dans toutes les directions. Pour chaque direction, un temps de trajet est donné et il peut varier entre 1 et 5 unités (un temps 0 signifie le le chemin n’existe pas). Nous souhaitons trouver le chemin le plus court à parcourir en minimisant la durée du parcours (ce qui ne veut pas dire que ce sera le chemin avec le moins de cases).
+Notre objectif à nous, élèves assidus, est donc de faire en sorte que ce code vérifie toutes les cases autour de chaque case de parcours en “même temps” plutôt que séquentiellement, ce qui accélèrera considérablement l’exécution de notre programme, comme nous allons vous le démontrer :
+
+Temps d’exécution du code de base : 948.109 ms
+Temps d’exécution du code multi-threadé : 150.769 ms
+rapport: ~ 9
+
+Sans temps d’attente:
+Temps d’exécution du code de base : 0.9345 ms (on remarque que ce temps d’exécution est très stable (entre 0.93 ms et 0.95 ms))
+Temps d’exécution du code multi-threadé : 181.74 ms (on remarque que ce temps d’exécution varie grandement (entre 100 et 350 ms))
+rapport: ~ 200
+
+La raison de ce retournement de situation est dûe à un trop grand nombre de changement de contexte qui ralentit l'exécution du code comparé à une version mono-threadé.
+
